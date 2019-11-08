@@ -1,0 +1,6 @@
+<h1>Parent</h1>
+{{msg}}
+<!--<app-enfant [msg]="msg"></app-enfant>-->
+<!--<app-enfant [msgParent]="msg"></app-enfant>-->
+<app-enfant [msg2]="'Bonjour'" (onChange)="onAfficher($event)"></app-enfant>
+<p> {{valeur}}</p>

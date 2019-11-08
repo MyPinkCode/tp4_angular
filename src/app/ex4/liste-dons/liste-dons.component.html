@@ -1,0 +1,10 @@
+<div>
+        <h1>liste des dons</h1>
+        <ul class="list-group">
+            <li *ngFor="let t of dons" class="list-group-item">
+        
+                <app-don [d]="t" (onChange)="onAfficher($event)"></app-don>
+            </li>
+        </ul>
+        <p>le total est {{total}}</p>
+        </div>

@@ -1,0 +1,10 @@
+<h3>{{mat.nom}}</h3>
+<p>
+    <img [src]="mat.image" style="width: 50px;height: 50px;"/>
+   reference: {{mat.reference}}
+   <input type="text" [value]="mat.prix" readonly/>
+   Etat: {{mat.repare}}
+   <span *ngIf="mat.repare=='endommagé'">
+       <button class="btn btn-success"> reparer</button>
+   </span>
+</p>

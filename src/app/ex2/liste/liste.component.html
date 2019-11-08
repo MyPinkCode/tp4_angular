@@ -1,0 +1,10 @@
+<div>
+<h1>liste des materiels</h1>
+<ul class="list-group">
+    <li *ngFor="let t of materiels" 
+    [ngClass]="{'list-group-item':true,'list-group-item-success': t.repare=='endommagé'}">
+
+        <app-matriel [mat]="t"></app-matriel>
+    </li>
+</ul>
+</div>
